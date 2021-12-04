@@ -13,10 +13,10 @@ const nuevoBool = true;
 const nuevaResta = 10 - 5 === 5;
 
 // Resuelve el siguiente problema matemático:
-const nuevaMultiplicacion = 10 * null === 40 ;
+const nuevaMultiplicacion = 10 * 4 === 40 ;
 
 // Resuelve el siguiente problema matemático:
-const nuevoModulo = 21 % 5 === null;
+const nuevoModulo = 21 % 5 === 1;
 
 
 // En los próximos 22 problemas, deberás completar la función.
@@ -76,12 +76,12 @@ function tienenMismaLongitud(str1, str2) {
   // De lo contrario, devuelve "false"
   // Tu código:
   var bool;
-  if(str1.length === str2.length ){
-    bool= true;
-  }else{
-    bool= false;
-    return boolean;
-  
+  if(str1.length == str2.length ){
+    return true;
+    }
+    else{
+      return false;
+      }
 }
 
 function menosQueNoventa(num) {
@@ -90,11 +90,8 @@ function menosQueNoventa(num) {
   // Tu código:
   var bo=false;
   if(num < 90){
-    bo=true;
-    }
-    
-  return bo;
-  
+    return true;
+    }else{ return false;  }  
 }
 
 function mayorQueCincuenta(num) {
@@ -103,11 +100,12 @@ function mayorQueCincuenta(num) {
   // Tu código:
   var booleann ;
   if(num > 50){
-    booleann= true;
-  }else{
-    boolean= false;
-  }
-  return boolean;
+    return true;
+  } 
+    else{
+      return false;
+    }
+ 
 }
 
 function obtenerResto(x, y) {
@@ -121,16 +119,12 @@ function esPar(num) {
   // Devuelve "true" si "num" es par
   // De lo contrario, devuelve "false"
   // Tu código:
-  var booleann ;
-  if(num%2 ===0){
-    booleann= true;
-  }else{
-    boolean= false;
+  if(num%2 == 0){
+    return true;
   }
-  return boolean;
-}
-
-  
+    else{
+      return false;
+    }
 }
 
 function esImpar(num) {
@@ -138,46 +132,44 @@ function esImpar(num) {
   // De lo contrario, devuelve "false"
   // Tu código:
   var booleann ;
-  if(num %2 === 0){
-    booleann= false;
-  }else{
-    boolean= true;
+  if(num%2 == 0){
+    return false;
   }
-  return boolean;
+    else{
+      return true;
+    }
 }
-
-  
 
 
 function elevarAlCuadrado(num) {
   // Devuelve el valor de "num" elevado al cuadrado
   // ojo: No es raiz cuadrada!
   // Tu código:
-  return math.pow(num,2);
+  return Math.pow(num,2);
 }
 
 function elevarAlCubo(num) {
   // Devuelve el valor de "num" elevado al cubo
   // Tu código:
-  return math.pow(num,3);
+  return Math.pow(num,3);
 }
 
 function elevar(num, exponent) {
   // Devuelve el valor de "num" elevado al exponente dado en "exponent"
   // Tu código:
-  return math.pow(num,exponent);
+  return Math.pow(num, exponent);
 }
 
 function redondearNumero(num) {
   // Redondea "num" al entero más próximo y devuélvelo
   // Tu código:
-  Math.round(num);
+  return Math.round(num);
 }
 
 function redondearHaciaArriba(num) {
   // Redondea "num" hacia arriba (al próximo entero) y devuélvelo
   // Tu código:
-  Math.floor(num);
+  return Math.ceil(num);
 }
 
 function numeroRandom() {
@@ -193,13 +185,15 @@ function esPositivo(numero) {
   //Si el número es negativo, devolver ---> "Es negativo"
   //Si el número es 0, devuelve false
   var msj;
-  if( numero > 0 ){
-    msj = "Es positivo";
-  }else{
-    msj = "Es negativo";
-  }
-  console.log(msj);
-  return msj;
+  if(numero >0){
+    return "Es positivo";
+  } 
+    else if(numero < 0){
+      return "Es negativo";
+    }
+      else if(numero ===0){
+        return false;
+      }
   
 }
 
@@ -261,9 +255,9 @@ function esVocal(letra){
   //que no se puede procesar el dato mediante el mensaje "Dato incorrecto".
   // Si no es vocal, tambien debe devolver "Dato incorrecto".
   //Escribe tu código aquí
-  if(letra.length===1){
-    if(letra == a || letra == e || letra == i || letra == o || letra == u ){
-      return 'Es vocal';
+  if(letra.length==1){
+    if(letra == "a" || letra == "e" || letra == "i" || letra == "o" || letra == "u" || letra == "A" || letra == "E" || letra == "I" || letra == "O" || letra == "U" ){
+      return "Es vocal";
     }else{
       return "Dato incorrecto";
     }
