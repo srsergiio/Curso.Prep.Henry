@@ -1,0 +1,29 @@
+span{
+    color:rgb(25, 123, 204);
+
+}
+.divclass{
+        margin: left 400;
+        margin: right 400;
+}
+h1{
+    color:rgb(168, 194, 22)
+
+}
+
+img{
+    width:   400px;
+    border: 1px solid black;
+    padding-top: 50px;
+}
+
+#thirdDiv{
+    width: 500px; ;
+    height: 600px;;
+    padding: 50px;
+    border: 1px solid red;
+}
+#spanId{
+    font-size:18px;
+    margin: 50px; 
+}
