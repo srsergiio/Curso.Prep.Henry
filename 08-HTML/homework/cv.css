@@ -1,4 +1,25 @@
+*{
+    font-family: 'FabricMDL2Icons';
+}
 #hoja{
-    width: 70%;
-    margin-right:auto;
+    border: 1px solid ;
+    width: 1200px;
+    margin-left: 360px; 
+}
+#DIVleft{
+    width: 800px;
+    height: 1080px;
+    float: left;
+}
+#DIVright{
+    width: 400px;
+    height: 1080px;
+    background-color: blue;
+    color: white;
+    display: inline-block;
+    
+}
+
+#Avatar{
+    background-color: aqua;
 }
